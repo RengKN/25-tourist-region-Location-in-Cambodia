@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+/* local */
+body{
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/Angkor-Wat-at-sunrise-Siem-Reap.jpg'); /* Replace 'your-image.jpg' with the path to your image file */
+    background-size: cover; /* Adjust as needed: cover, contain, etc. */
+    background-position: center; /* Adjust as needed: center, top, left, etc. */
+    background-repeat: no-repeat; /* Adjust as needed: repeat, repeat-x, repeat-y, etc. */
+
+}
+header{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.card{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+.card:hover{
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+.card img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 15px;
+    filter: brightness(1.2);
+}
+.card h2{
+    color: #333;
+}
+
+.card p{
+    color: #666;
+}
+
+#main-footer {
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+/* local */
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #04AA6D;
+}
+.navbar-toggler span{
+    color: #04AA6D;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #04AA6D;
+    color: white;
+}
+#navbar form button{
+    background: #04AA6D;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./img/Angkor-Wat-at-sunrise-Siem-Reap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #00FA9A;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Cambodia";}
+    5%{content: "Phnom Penh";}
+    10%{content: "Siem Reap";}
+    15%{content: "Battambong";}
+    20%{content: "Mondulkiri";}
+    25%{content: "Ratanakiri";}
+    30%{content: "Preah Sihanouk";}
+    35%{content: "Preah Vihear";}
+    40%{content: "Kep";}
+    45%{content: "Kompot";}
+    50%{content: "Oddar Meanchey";}
+    55%{content: "Banteay Meanchey";}
+    60%{content: "Koh Kong";}
+    65%{content: "Takeo";}
+    70%{content: "Stung Treng";}
+    75%{content: "Pailin";}
+    80%{content: "Kratie";}
+    85%{content: "Kompong Cham";}
+    90%{content: "Pursat";}
+    95%{content: "Kompong Speu";}
+    100%{content: "Svay Rieng";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #04AA6D;
+    color: white;
+}
+
+/* Home Section End */
+
+/* Section Book Start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #04AA6D;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #04AA6D;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+
+/* Section Book End */
+
+
+/* Section Places Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #04AA6D;
+}
+.checked{
+    color: #04AA6D;
+}
+.star i{
+    font-size: 15px;
+}
+/* Section Places End */
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #04AA6D;
+    margin-top: 20px;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Services End */
+
+
+/* About Start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #04AA6D;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+#hide{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #04AA6D;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;    
+}
+#show{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #04AA6D;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;    
+}
+#hide:hover{
+    width: 200px;
+}
+#show:hover{
+    width: 200px;
+}
+
+/* About End */
