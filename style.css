@@ -7,16 +7,45 @@
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
 }
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
 /* local */
 body{
     font-family: Arial, sans-serif;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('img/Angkor-Wat-at-sunrise-Siem-Reap.jpg'); /* Replace 'your-image.jpg' with the path to your image file */
-    background-size: cover; /* Adjust as needed: cover, contain, etc. */
-    background-position: center; /* Adjust as needed: center, top, left, etc. */
-    background-repeat: no-repeat; /* Adjust as needed: repeat, repeat-x, repeat-y, etc. */
+    /* background-image: url('img/Angkor-Wat-at-sunrise-Siem-Reap.jpg');  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 header{
@@ -29,12 +58,11 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
 }
 .card{
     width: 300px;
     margin: 20px;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -51,9 +79,12 @@ header{
     border-radius: 5px 5px 0 0;
     margin-bottom: 15px;
     filter: brightness(1.2);
+    width: 100%;
+    height: auto;
 }
 .card h2{
     color: #333;
+    font-size: medium;
 }
 
 .card p{
@@ -116,6 +147,8 @@ header{
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./img/Angkor-Wat-at-sunrise-Siem-Reap.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    animation: changeBackground 10s infinite linear;   
+    
 }
 .home .content{
     text-align: center;
@@ -141,28 +174,30 @@ header{
     animation: changetext 10s infinite linear;
 }
 @keyframes changetext{
-    0%{content: "Cambodia";}
-    5%{content: "Phnom Penh";}
-    10%{content: "Siem Reap";}
-    15%{content: "Battambong";}
-    20%{content: "Mondulkiri";}
-    25%{content: "Ratanakiri";}
-    30%{content: "Preah Sihanouk";}
-    35%{content: "Preah Vihear";}
-    40%{content: "Kep";}
-    45%{content: "Kompot";}
-    50%{content: "Oddar Meanchey";}
-    55%{content: "Banteay Meanchey";}
-    60%{content: "Koh Kong";}
-    65%{content: "Takeo";}
-    70%{content: "Stung Treng";}
-    75%{content: "Pailin";}
-    80%{content: "Kratie";}
-    85%{content: "Kompong Cham";}
-    90%{content: "Pursat";}
-    95%{content: "Kompong Speu";}
-    100%{content: "Svay Rieng";}
+    0%{content: "Phnom Penh";}
+    25%{content: "Siem Reap";}
+    50%{content: "Battambong";}
+    75%{content: "Mondulkiri";}
+    100%{content: "Preah Sihanouk";}
 } 
+@keyframes changeBackground {
+    0%{
+      background-image: url('img/phnom penh for main.jpg');
+    }
+    25%{
+      background-image: url('img/siem reap for main.png');
+    }
+    50% {
+      background-image: url('img/battambong for main.jpg');
+    }
+    75%{
+      background-image: url('img/mondulkiri for main.jpg');
+    }
+    100%{
+      background-image: url('img/preah sihanouk for main.jpg');
+    }
+  }
+
 .home .content p{
     color: white;
     font-size: 15px;
@@ -202,7 +237,7 @@ header{
     color: #04AA6D;
 }
 .book .card{
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0px 5px 5px -6px black;
 }
 .book .row{
@@ -240,7 +275,7 @@ header{
 /* Section Book End */
 
 
-/* Section Places Start */
+/* Section Location Start */
 .main-txt h1{
     text-align: center;
     margin-top: 30px;
@@ -254,46 +289,25 @@ header{
     color: #04AA6D;
 }
 .star i{
-    font-size: 15px;
+    font-size: 10px;
 }
-/* Section Places End */
-
-/* Section Services Start */
-.services{
-    background: #f9f9f9;
-    margin-top: 50px;
-}
-.services .card{
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
-    border: none;
-    cursor: pointer;
-}
-.services .card i{
-    font-size: 80px;
-    text-align: center;
-    color: #04AA6D;
-    margin-top: 20px;
-}
-.services .card .card-body{
-    text-align: center;
-}
-/* Section Services End */
+/* Section Location End */
 
 
 /* About Start */
 .about{
-    padding: 50px;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 20px;
     background: #f9f9f9;
 }
 .about .card{
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .about .card img{
-    border-radius: 10px;
+    border-radius: 50px;
 }
 .about h2{
-    font-weight: 600;
+    font-weight: 200;
     letter-spacing: 1px;
 }
 .about p{
