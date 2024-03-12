@@ -313,21 +313,6 @@ header{
 .about p{
     font-weight: 500;
 }
-#about-btn{
-    width: 150px;
-    height: 38px;
-    border: none;
-    border-radius: 5px;
-    background: #04AA6D;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 550;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#about-btn:hover{
-    width: 170px;
-}
 #hide{
     width: 150px;
     height: 38px;
@@ -338,7 +323,8 @@ header{
     letter-spacing: 2px;
     font-weight: 550;
     transition: 0.5s ease;
-    cursor: pointer;    
+    cursor: pointer;   
+    margin: 10px 20px;
 }
 #show{
     width: 150px;
@@ -350,7 +336,8 @@ header{
     letter-spacing: 2px;
     font-weight: 550;
     transition: 0.5s ease;
-    cursor: pointer;    
+    cursor: pointer;   
+    margin: 10px 20px;
 }
 #hide:hover{
     width: 200px;
